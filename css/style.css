@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.phone-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-container .phone {
+  width: 408px;
+  height: 612px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  border: 7px solid black;
+  border-radius: 20px;
+  background-image: url("../images/iphone-bg.webp");
+  background-size: cover;
+}
+.phone-container .phone .phone-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone-container .phone .phone-text > * {
+  color: white;
+}
+.phone-container .phone .phone-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.phone-container .phone .phone-menu > div {
+  display: flex;
+  justify-content: center;
+}
+.phone-container .phone .phone-menu > div button {
+  padding: 4px;
+  border: 1px solid orange;
+  border-radius: 7px;
+}
+.phone-container .phone .phone-menu img {
+  width: 50px;
+  height: 50px;
+}
+.phone-container .phone .modals {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 15px;
+  display: none;
+}
+.phone-container .phone .modal-open {
+  display: block;
+}
+
+.close {
+  padding: 5px;
+}
+.close button {
+  background: none;
+  border: none;
+  font-size: 15px;
+}
+
+.alarm-modal {
+  background-color: cornflowerblue;
+}
+.alarm-modal .alarm-modal-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.alarm-modal .alarm-modal-content label {
+  color: white;
+  font-size: 25px;
+}
+.alarm-modal .alarm-modal-content input {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid blue;
+}
+.alarm-modal .alarm-modal-content button {
+  padding: 10px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 4px;
+}
+.alarm-modal .alarm-cards {
+  padding: 20px;
+}
+.alarm-modal .alarm-cards .alarm-card {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.alarm-modal .pause-play-btns {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.alarm-modal .pause-play-btns button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: greenyellow;
+  color: white;
+}
+
+.perevod-modal {
+  background: white;
+}
+.perevod-modal .perevod-inputs {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.perevod-modal .perevod-inputs > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.perevod-modal .perevod-inputs > div > div button {
+  padding: 2px;
+  background-color: orange;
+  border: none;
+  border-radius: 4px;
+  color: whitesmoke;
+}
+.perevod-modal .perevod-inputs input {
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.timer-modal {
+  background-color: white;
+}
+.timer-modal .timer-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.timer-modal .timer-numbers h2 {
+  margin-top: 20px;
+}
+.timer-modal .timer-numbers button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: orange;
+}

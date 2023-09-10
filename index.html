@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="phone-container">
+      <div class="phone">
+        <div class="modals timer-modal">
+          <div class="close">
+            <button class="close-btn1">-close</button>
+          </div>
+          <div class="timer-numbers">
+            <h2>0:0:0</h2>
+            <div>
+              <button class="start-timer">start</button>
+              <button class="stop-btn-2">stop</button>
+            </div>
+          </div>
+        </div>
+        <div class="modals perevod-modal">
+          <div class="close">
+            <button class="close-btn2">-close</button>
+          </div>
+          <div class="perevod-inputs">
+            <div class="lotincha">
+              <div>
+                <label for="lotincha">Lotincha</label>
+                <button class="delete-all">Delete</button>
+              </div>
+              <input type="text" id="lotincha" />
+            </div>
+            <div class="ruscha">
+              <div>
+                <label for="ruscha">Ruscha</label>
+                <button class="copy-all">Copy</button>
+              </div>
+              <input type="text" id="ruscha" />
+            </div>
+          </div>
+        </div>
+        <div class="modals alarm-modal">
+          <div class="close">
+            <button class="close-btn3">-close</button>
+          </div>
+          <div class="alarm-modal-content">
+            <label for="alarm-time">Vaqtni kiriting !</label>
+            <input
+              type="text"
+              placeholder="12:00:00 shu kornishda kiriting"
+              id="alarm-time"
+            />
+            <button class="add-alarm-btn">Add alarm</button>
+          </div>
+          <div class="alarm-cards"></div>
+          <div class="pause-play-btns">
+            <button class="pause-btn">Pause</button>
+            <button class="play-btn">Play</button>
+          </div>
+          <audio
+            class="audio"
+            src="audio/mixkit-alarm-digital-clock-beep-989.wav"
+          ></audio>
+        </div>
+        <div class="modals you-tube-modal">
+          <div class="close">
+            <button class="close-btn4">-close</button>
+          </div>
+        </div>
+        <div class="phone-text">
+          <h2></h2>
+          <h4></h4>
+        </div>
+        <div class="phone-menu">
+          <div>
+            <div class="timer">
+              <button><img src="images/timer.png" alt="" /></button>
+            </div>
+          </div>
+          <div>
+            <div class="perevod">
+              <button><img src="images/perevod.jpg" alt="" /></button>
+            </div>
+          </div>
+          <div>
+            <div class="alarm">
+              <button><img src="images/alarm.png" alt="" /></button>
+            </div>
+          </div>
+          <div>
+            <div class="you-tube">
+              <button><img src="images/you-tube.png" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
